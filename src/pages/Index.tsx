@@ -2,6 +2,7 @@ import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
 const SEND_LEAD_URL = "https://functions.poehali.dev/60193b9b-2d6c-4a62-9a84-c5350aff37b6";
+const TELEGRAM_LINK = "https://t.me/+79236566500";
 
 const HERO_IMG = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/files/a1e94587-e39f-4bbf-a772-f2ccd2011fe4.jpg";
 const GALLERY_IMG_1 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/files/2619eb68-b894-4ec2-9573-8a62d0ed5d3f.jpg";
@@ -703,6 +704,22 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      {/* TELEGRAM FLOAT */}
+      <a
+        href={TELEGRAM_LINK}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-[#229ED9] text-white px-4 py-3 shadow-lg hover:bg-[#1a8bbf] transition-colors group"
+        style={{ borderRadius: 2 }}
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L6.514 14.85l-2.948-.924c-.641-.2-.654-.641.136-.953l11.51-4.44c.535-.194 1.003.131.35 1.715z"/>
+        </svg>
+        <span className="font-montserrat text-xs tracking-widest uppercase">
+          Написать Максу
+        </span>
+      </a>
 
       {/* FOOTER */}
       <footer className="bg-background border-t border-border py-10">
