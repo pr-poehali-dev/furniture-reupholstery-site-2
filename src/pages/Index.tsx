@@ -516,8 +516,8 @@ export default function Index() {
 
               <div className="flex flex-col gap-6">
                 {[
-                  { icon: "Phone", title: "Телефон", value: "+7 (999) 123-45-67", sub: "Ежедневно 9:00 — 21:00" },
-                  { icon: "MapPin", title: "Адрес", value: "Москва, ул. Мастерская, 12", sub: "Работаем с выездом" },
+                  { icon: "Phone", title: "Телефон", value: "8-923-656-6500", sub: "Ежедневно 9:00 — 21:00" },
+                  { icon: "MapPin", title: "Адрес", value: "Барнаул, ул. Попова, 181/1", sub: "Работаем с выездом" },
                   { icon: "Mail", title: "Email", value: "info@artrestavratsiya.ru", sub: "Ответим в течение часа" },
                 ].map((contact, idx) => (
                   <div key={idx} className="flex items-start gap-4">
