@@ -123,7 +123,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <a href="#" className="flex flex-col leading-none">
             <span className="font-cormorant text-xl text-gold-gradient tracking-widest uppercase" style={{fontWeight: 600}}>
-              АртРеставрация
+              Перетяжка мебели №1
             </span>
             <span className="font-montserrat text-[9px] tracking-[0.3em] text-muted-foreground uppercase mt-0.5">
               Мастерская перетяжки мебели
@@ -597,7 +597,7 @@ export default function Index() {
               className="font-cormorant text-lg text-gold-gradient tracking-widest uppercase"
               style={{ fontWeight: 600 }}
             >
-              АртРеставрация
+              Перетяжка мебели №1
             </span>
             <span className="font-montserrat text-[9px] tracking-widest text-muted-foreground uppercase mt-0.5">
               Мастерская перетяжки мебели
@@ -617,7 +617,7 @@ export default function Index() {
           </div>
 
           <p className="font-montserrat text-[10px] text-muted-foreground">
-            © 2024 АртРеставрация
+            © 2024 Перетяжка мебели №1
           </p>
         </div>
       </footer>
