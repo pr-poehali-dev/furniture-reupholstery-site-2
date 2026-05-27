@@ -518,7 +518,7 @@ export default function Index() {
                 {[
                   { icon: "Phone", title: "Телефон", value: "8-923-656-6500", sub: "Ежедневно 9:00 — 21:00" },
                   { icon: "MapPin", title: "Адрес", value: "Барнаул, ул. Попова, 181/1", sub: "Работаем с выездом" },
-                  { icon: "Mail", title: "Email", value: "info@artrestavratsiya.ru", sub: "Ответим в течение часа" },
+                  { icon: "Mail", title: "Email", value: "dionis.1979@icloud.com", sub: "Ответим в течение часа" },
                 ].map((contact, idx) => (
                   <div key={idx} className="flex items-start gap-4">
                     <div className="w-10 h-10 border border-primary/30 flex items-center justify-center flex-shrink-0">
