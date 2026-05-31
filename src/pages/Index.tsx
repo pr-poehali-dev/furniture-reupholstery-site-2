@@ -464,7 +464,7 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-3/4 h-3/4 border border-primary/20 z-0" />
-              <img src={GALLERY_IMG_1} alt="О мастерской" className="relative z-10 w-full h-[500px] object-cover" />
+              <img src="https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/files/c71b2754-5ab9-48fb-94ef-09ec405b1d41.jpg" alt="Обивщик мягкой мебели" className="relative z-10 w-full h-[500px] object-cover" />
               <div className="absolute -bottom-4 -right-4 w-1/2 h-1/2 bg-primary/5 z-0 border border-primary/10" />
               <div className="absolute -bottom-6 left-8 z-20 bg-card border border-primary/30 p-6">
                 <div className="font-cormorant text-5xl text-gold-gradient leading-none" style={{ fontFamily: "'Cormorant Garamond', serif" }}>15</div>
