@@ -561,6 +561,51 @@ export default function Index() {
         </div>
       </section>
 
+      {/* PHOTO ESTIMATE */}
+      <section id="photo-estimate" className="py-28 bg-card">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <p className="font-montserrat text-xs tracking-[0.4em] uppercase text-primary mb-4">Быстро и удобно</p>
+          <h2 className="font-cormorant text-5xl md:text-6xl font-light gold-line-center mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+            Оценка работ по фото
+          </h2>
+          <p className="font-montserrat text-sm leading-relaxed text-muted-foreground mb-10 max-w-xl mx-auto">
+            Пришлите фото вашей мебели — и мы бесплатно рассчитаем стоимость работ в течение часа. Без выезда и лишних вопросов.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+            <a
+              href="tel:89236566500"
+              className="font-montserrat text-xs tracking-widest uppercase px-10 py-4 bg-primary text-primary-foreground hover:opacity-90 transition-opacity flex items-center gap-3"
+            >
+              <Icon name="Phone" size={14} />
+              8-923-656-6500
+            </a>
+            <a
+              href="https://wa.me/79236566500"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-montserrat text-xs tracking-widest uppercase px-10 py-4 border border-border text-foreground hover:border-primary transition-colors flex items-center gap-3"
+            >
+              <Icon name="MessageCircle" size={14} />
+              Написать в WhatsApp
+            </a>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
+            {[
+              { icon: "Camera", text: "Сфотографируйте мебель" },
+              { icon: "Send", text: "Отправьте нам фото" },
+              { icon: "BadgeCheck", text: "Получите точную цену" },
+            ].map((step, i) => (
+              <div key={i} className="flex flex-col items-center gap-3">
+                <div className="w-12 h-12 border border-primary/30 flex items-center justify-center">
+                  <Icon name={step.icon} size={18} className="text-primary" fallback="Check" />
+                </div>
+                <p className="font-montserrat text-xs text-muted-foreground">{step.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CONTACTS */}
       <section id="contacts" className="py-28 bg-card">
         <div className="max-w-7xl mx-auto px-6">
