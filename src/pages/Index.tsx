@@ -580,13 +580,13 @@ export default function Index() {
               8-923-656-6500
             </a>
             <a
-              href="https://wa.me/79236566500"
+              href="https://max.ru/+79236566500"
               target="_blank"
               rel="noopener noreferrer"
               className="font-montserrat text-xs tracking-widest uppercase px-10 py-4 border border-border text-foreground hover:border-primary transition-colors flex items-center gap-3"
             >
               <Icon name="MessageCircle" size={14} />
-              Написать в WhatsApp
+              Написать в Max
             </a>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
