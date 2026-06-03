@@ -4,7 +4,7 @@ import Icon from "@/components/ui/icon";
 const SEND_LEAD_URL = "https://functions.poehali.dev/60193b9b-2d6c-4a62-9a84-c5350aff37b6";
 const TELEGRAM_LINK = "https://t.me/+79236566500";
 
-const HERO_IMG = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/files/a1e94587-e39f-4bbf-a772-f2ccd2011fe4.jpg";
+const HERO_IMG = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/077e8eab-7f10-49c0-8428-e8e477ebd43a.png";
 const GALLERY_IMG_1 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/files/2619eb68-b894-4ec2-9573-8a62d0ed5d3f.jpg";
 const GALLERY_IMG_2 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/files/3db463a2-151a-4ae7-b3b6-ca37da10ba2a.jpg";
 const BEFORE_AFTER_1 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/files/3b286939-aba5-408e-8b20-bb60ce6b76ff.jpg";
