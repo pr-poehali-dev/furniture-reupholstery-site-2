@@ -532,7 +532,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
             <div className="relative overflow-hidden">
               <img
                 src="https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/10544cb8-8121-48a8-b1a7-92907ded99ab.png"
@@ -551,6 +551,16 @@ export default function Index() {
               />
               <div className="absolute bottom-0 left-0 right-0 bg-background/70 px-5 py-3">
                 <p className="font-montserrat text-xs tracking-widest uppercase text-foreground">Бесплатный вывоз и доставка</p>
+              </div>
+            </div>
+            <div className="relative overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/413cd880-6b3f-42be-8051-9d686202ae53.png"
+                alt="Выбор тканей"
+                className="w-full h-64 object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-background/70 px-5 py-3">
+                <p className="font-montserrat text-xs tracking-widest uppercase text-foreground">Большой выбор тканей</p>
               </div>
             </div>
           </div>
