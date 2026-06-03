@@ -545,7 +545,7 @@ export default function Index() {
               <div className="grid grid-cols-2 gap-6 mb-10">
                 {[
                   { icon: "Award", title: "Гарантия 2 года", desc: "На все виды работ" },
-                  { icon: "Truck", title: "Бесплатный выезд", desc: "Оценка и замеры" },
+                  { icon: "Camera", title: "Оценка по фото", desc: "Пришли фото — скажем цену" },
                   { icon: "Clock", title: "Точно в срок", desc: "Выполняем договорённости" },
                   { icon: "Gem", title: "Элитные ткани", desc: "Поставки из Европы" },
                 ].map((feat, idx) => (
