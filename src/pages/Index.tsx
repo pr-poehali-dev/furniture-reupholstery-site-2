@@ -287,7 +287,7 @@ export default function Index() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24">
           <div className="max-w-2xl">
             <p className="font-montserrat text-xs tracking-[0.4em] uppercase text-primary mb-6 animate-fade-in-up">
-              №1 в Барнауле · 15 лет мастерства
+              №1 в Барнауле · 22 года мастерства
             </p>
             <h1 className="font-cormorant text-6xl md:text-8xl font-light leading-[0.9] mb-6 animate-fade-in-up delay-200" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               <span className="block text-foreground">Новая</span>
@@ -319,9 +319,9 @@ export default function Index() {
 
             <div className="flex gap-10 mt-16 pt-8 border-t border-border/50 animate-fade-in-up delay-800">
               {[
-                { value: "15+", label: "лет опыта" },
-                { value: "2400+", label: "выполненных работ" },
-                { value: "2 года", label: "гарантия" },
+                { value: "22+", label: "лет опыта" },
+                { value: "10230+", label: "выполненных работ" },
+                { value: "12 мес.", label: "гарантия" },
               ].map((stat) => (
                 <div key={stat.label} className="flex flex-col">
                   <span className="font-cormorant text-3xl text-gold-gradient" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
@@ -523,8 +523,8 @@ export default function Index() {
               <img src="https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/files/c71b2754-5ab9-48fb-94ef-09ec405b1d41.jpg" alt="Обивщик мягкой мебели" className="relative z-10 w-full h-[500px] object-cover" />
               <div className="absolute -bottom-4 -right-4 w-1/2 h-1/2 bg-primary/5 z-0 border border-primary/10" />
               <div className="absolute -bottom-6 left-8 z-20 bg-card border border-primary/30 p-6">
-                <div className="font-cormorant text-5xl text-gold-gradient leading-none" style={{ fontFamily: "'Cormorant Garamond', serif" }}>15</div>
-                <div className="font-montserrat text-[9px] tracking-widest uppercase text-muted-foreground mt-1">лет опыта</div>
+                <div className="font-cormorant text-5xl text-gold-gradient leading-none" style={{ fontFamily: "'Cormorant Garamond', serif" }}>22</div>
+                <div className="font-montserrat text-[9px] tracking-widest uppercase text-muted-foreground mt-1">года опыта</div>
               </div>
             </div>
 
@@ -544,7 +544,7 @@ export default function Index() {
 
               <div className="grid grid-cols-2 gap-6 mb-10">
                 {[
-                  { icon: "Award", title: "Гарантия 2 года", desc: "На все виды работ" },
+                  { icon: "Award", title: "Гарантия 12 месяцев", desc: "На все виды работ" },
                   { icon: "Camera", title: "Оценка по фото", desc: "Пришли фото — скажем цену" },
                   { icon: "Clock", title: "Точно в срок", desc: "Выполняем договорённости" },
                   { icon: "Gem", title: "Элитные ткани", desc: "Поставки из Европы" },
