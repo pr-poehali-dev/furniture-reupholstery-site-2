@@ -176,7 +176,7 @@ const StarRating = ({ count }: { count: number }) => (
 export default function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState("Все");
-  const [lightbox, setLightbox] = useState<{ img: string; label: string } | null>(null);
+  const [lightboxIdx, setLightboxIdx] = useState<number | null>(null);
   const [form, setForm] = useState({ name: "", phone: "", service: "", message: "" });
   const [formState, setFormState] = useState<"idle" | "loading" | "success" | "error">("idle");
 
@@ -456,7 +456,7 @@ export default function Index() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {filteredGallery.map((item, idx) => (
-              <div key={idx} className="group relative overflow-hidden aspect-[4/3] cursor-pointer" onClick={() => setLightbox(item)}>
+              <div key={idx} className="group relative overflow-hidden aspect-[4/3] cursor-pointer" onClick={() => setLightboxIdx(idx)}>
                 <img
                   src={item.img}
                   alt={item.label}
@@ -475,25 +475,39 @@ export default function Index() {
             ))}
           </div>
 
-          {lightbox && (
+          {lightboxIdx !== null && (
             <div
               className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
-              onClick={() => setLightbox(null)}
+              onClick={() => setLightboxIdx(null)}
             >
               <button
                 className="absolute top-5 right-5 text-white/70 hover:text-white transition-colors"
-                onClick={() => setLightbox(null)}
+                onClick={() => setLightboxIdx(null)}
               >
                 <Icon name="X" size={32} />
               </button>
+              <button
+                className="absolute left-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors p-2"
+                onClick={(e) => { e.stopPropagation(); setLightboxIdx((lightboxIdx - 1 + filteredGallery.length) % filteredGallery.length); }}
+              >
+                <Icon name="ChevronLeft" size={40} />
+              </button>
+              <button
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors p-2"
+                onClick={(e) => { e.stopPropagation(); setLightboxIdx((lightboxIdx + 1) % filteredGallery.length); }}
+              >
+                <Icon name="ChevronRight" size={40} />
+              </button>
               <img
-                src={lightbox.img}
-                alt={lightbox.label}
+                src={filteredGallery[lightboxIdx].img}
+                alt={filteredGallery[lightboxIdx].label}
                 className="max-w-full max-h-[90vh] object-contain"
                 onClick={(e) => e.stopPropagation()}
               />
               <div className="absolute bottom-6 left-0 right-0 text-center">
-                <span className="font-montserrat text-xs tracking-widest uppercase text-white/60">{lightbox.label}</span>
+                <span className="font-montserrat text-xs tracking-widest uppercase text-white/60">
+                  {filteredGallery[lightboxIdx].label} — {lightboxIdx + 1} / {filteredGallery.length}
+                </span>
               </div>
             </div>
           )}
