@@ -176,6 +176,7 @@ const StarRating = ({ count }: { count: number }) => (
 export default function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState("Все");
+  const [lightbox, setLightbox] = useState<{ img: string; label: string } | null>(null);
   const [form, setForm] = useState({ name: "", phone: "", service: "", message: "" });
   const [formState, setFormState] = useState<"idle" | "loading" | "success" | "error">("idle");
 
@@ -455,7 +456,7 @@ export default function Index() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {filteredGallery.map((item, idx) => (
-              <div key={idx} className="group relative overflow-hidden aspect-[4/3] cursor-pointer">
+              <div key={idx} className="group relative overflow-hidden aspect-[4/3] cursor-pointer" onClick={() => setLightbox(item)}>
                 <img
                   src={item.img}
                   alt={item.label}
@@ -473,6 +474,29 @@ export default function Index() {
               </div>
             ))}
           </div>
+
+          {lightbox && (
+            <div
+              className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+              onClick={() => setLightbox(null)}
+            >
+              <button
+                className="absolute top-5 right-5 text-white/70 hover:text-white transition-colors"
+                onClick={() => setLightbox(null)}
+              >
+                <Icon name="X" size={32} />
+              </button>
+              <img
+                src={lightbox.img}
+                alt={lightbox.label}
+                className="max-w-full max-h-[90vh] object-contain"
+                onClick={(e) => e.stopPropagation()}
+              />
+              <div className="absolute bottom-6 left-0 right-0 text-center">
+                <span className="font-montserrat text-xs tracking-widest uppercase text-white/60">{lightbox.label}</span>
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
