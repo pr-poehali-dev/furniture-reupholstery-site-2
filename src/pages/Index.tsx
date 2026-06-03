@@ -115,18 +115,18 @@ const PRICES = [
 ];
 
 const GALLERY_ITEMS = [
-  { img: BEFORE_AFTER_4, label: "Угловой диван", category: "До/После" },
-  { img: BEFORE_AFTER_5, label: "Трёхместный диван", category: "До/После" },
-  { img: BEFORE_AFTER_6, label: "Двухместный диван", category: "До/После" },
-  { img: BEFORE_AFTER_7, label: "Угловой диван", category: "До/После" },
-  { img: BEFORE_AFTER_8, label: "Классический диван", category: "До/После" },
-  { img: BEFORE_AFTER_9, label: "Угловой диван", category: "До/После" },
-  { img: BEFORE_AFTER_10, label: "Трёхместный диван", category: "До/После" },
-  { img: BEFORE_AFTER_11, label: "Антикварный диван", category: "До/После" },
-  { img: BEFORE_AFTER_12, label: "Угловой диван", category: "До/После" },
-  { img: BEFORE_AFTER_13, label: "Двухместный диван", category: "До/После" },
-  { img: BEFORE_AFTER_14, label: "Диван Честерфилд", category: "До/После" },
-  { img: BEFORE_AFTER_15, label: "Изголовье кровати", category: "До/После" },
+  { img: BEFORE_AFTER_4, label: "Угловой диван", category: "Диваны" },
+  { img: BEFORE_AFTER_5, label: "Трёхместный диван", category: "Диваны" },
+  { img: BEFORE_AFTER_6, label: "Двухместный диван", category: "Диваны" },
+  { img: BEFORE_AFTER_7, label: "Угловой диван", category: "Диваны" },
+  { img: BEFORE_AFTER_8, label: "Классический диван", category: "Диваны" },
+  { img: BEFORE_AFTER_9, label: "Угловой диван", category: "Диваны" },
+  { img: BEFORE_AFTER_10, label: "Трёхместный диван", category: "Диваны" },
+  { img: BEFORE_AFTER_11, label: "Антикварный диван", category: "Диваны" },
+  { img: BEFORE_AFTER_12, label: "Угловой диван", category: "Диваны" },
+  { img: BEFORE_AFTER_13, label: "Двухместный диван", category: "Диваны" },
+  { img: BEFORE_AFTER_14, label: "Диван Честерфилд", category: "Диваны" },
+  { img: BEFORE_AFTER_15, label: "Изголовье кровати", category: "Кровати" },
 ];
 
 const REVIEWS = [
@@ -179,7 +179,7 @@ export default function Index() {
   const [form, setForm] = useState({ name: "", phone: "", service: "", message: "" });
   const [formState, setFormState] = useState<"idle" | "loading" | "success" | "error">("idle");
 
-  const categories = ["Все", "До/После", "Диваны", "Кресла", "Кровати", "Материалы"];
+  const categories = ["Все", "Диваны", "Кресла", "Кровати"];
   const filteredGallery =
     activeCategory === "Все"
       ? GALLERY_ITEMS
