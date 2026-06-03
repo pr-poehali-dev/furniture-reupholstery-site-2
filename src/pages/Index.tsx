@@ -14,6 +14,14 @@ const BEFORE_AFTER_4 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118
 const BEFORE_AFTER_5 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/2758e1ca-7826-49b6-85e0-805d27ab0101.png";
 const BEFORE_AFTER_6 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/2c896451-f6d3-489d-ab01-f2003368e1ed.png";
 const BEFORE_AFTER_7 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/06fd1526-cfe3-48f9-abd4-be40d9042eba.png";
+const BEFORE_AFTER_8 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/535d6181-fd93-4c4a-aebc-12a4c2232d49.png";
+const BEFORE_AFTER_9 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/9306968a-30ba-4382-a6c9-dd36f83be4e9.png";
+const BEFORE_AFTER_10 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/a180acff-a97d-4bd4-8d59-f96b363a352b.png";
+const BEFORE_AFTER_11 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/04680f7d-6291-4ebf-827e-8c68937c855f.png";
+const BEFORE_AFTER_12 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/6f95f39e-98b8-45d5-8f88-e907b0274e49.png";
+const BEFORE_AFTER_13 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/46a744df-3b4f-41c6-9bd3-549d2b8e6de5.png";
+const BEFORE_AFTER_14 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/74a13db3-3cf8-435d-840b-f4dc6350693a.png";
+const BEFORE_AFTER_15 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/7fdf4370-f487-4b4a-9284-0dbd898278c0.png";
 
 const NAV_LINKS = [
   { label: "Услуги", href: "#services" },
@@ -107,10 +115,18 @@ const PRICES = [
 ];
 
 const GALLERY_ITEMS = [
-  { img: BEFORE_AFTER_4, label: "Угловой диван до/после", category: "До/После" },
-  { img: BEFORE_AFTER_5, label: "Трёхместный диван до/после", category: "До/После" },
-  { img: BEFORE_AFTER_6, label: "Двухместный диван до/после", category: "До/После" },
-  { img: BEFORE_AFTER_7, label: "Угловой диван до/после", category: "До/После" },
+  { img: BEFORE_AFTER_4, label: "Угловой диван", category: "До/После" },
+  { img: BEFORE_AFTER_5, label: "Трёхместный диван", category: "До/После" },
+  { img: BEFORE_AFTER_6, label: "Двухместный диван", category: "До/После" },
+  { img: BEFORE_AFTER_7, label: "Угловой диван", category: "До/После" },
+  { img: BEFORE_AFTER_8, label: "Классический диван", category: "До/После" },
+  { img: BEFORE_AFTER_9, label: "Угловой диван", category: "До/После" },
+  { img: BEFORE_AFTER_10, label: "Трёхместный диван", category: "До/После" },
+  { img: BEFORE_AFTER_11, label: "Антикварный диван", category: "До/После" },
+  { img: BEFORE_AFTER_12, label: "Угловой диван", category: "До/После" },
+  { img: BEFORE_AFTER_13, label: "Двухместный диван", category: "До/После" },
+  { img: BEFORE_AFTER_14, label: "Диван Честерфилд", category: "До/После" },
+  { img: BEFORE_AFTER_15, label: "Изголовье кровати", category: "До/После" },
 ];
 
 const REVIEWS = [
