@@ -111,12 +111,6 @@ const GALLERY_ITEMS = [
   { img: BEFORE_AFTER_5, label: "Трёхместный диван до/после", category: "До/После" },
   { img: BEFORE_AFTER_6, label: "Двухместный диван до/после", category: "До/После" },
   { img: BEFORE_AFTER_7, label: "Угловой диван до/после", category: "До/После" },
-  { img: BEFORE_AFTER_1, label: "Диван до/после", category: "До/После" },
-  { img: BEFORE_AFTER_2, label: "Кресло до/после", category: "До/После" },
-  { img: BEFORE_AFTER_3, label: "Изголовье кровати", category: "Кровати" },
-  { img: GALLERY_IMG_1, label: "Кресло в велюре", category: "Кресла" },
-  { img: HERO_IMG, label: "Диван Честерфилд", category: "Диваны" },
-  { img: GALLERY_IMG_2, label: "Коллекция тканей", category: "Материалы" },
 ];
 
 const REVIEWS = [
