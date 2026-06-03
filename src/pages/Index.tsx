@@ -298,7 +298,7 @@ export default function Index() {
             <div className="w-16 h-px bg-gradient-to-r from-primary to-transparent mb-8 animate-fade-in-up delay-400" />
 
             <p className="font-montserrat text-sm leading-relaxed text-muted-foreground mb-10 max-w-md animate-fade-in-up delay-400">
-              Перетяжка диванов, кресел и кроватей в Барнауле. Европейские ткани, ручная работа, бесплатный выезд на замер.
+              Перетяжка диванов, кресел и кроватей в Барнауле. Европейские ткани, ручная работа, оценка по фотографии.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-600">
@@ -306,7 +306,7 @@ export default function Index() {
                 href="#contacts"
                 className="font-montserrat text-xs tracking-widest uppercase px-8 py-4 bg-primary text-primary-foreground hover:opacity-90 transition-opacity text-center"
               >
-                Бесплатный замер
+                Оценка по фото
               </a>
               <a
                 href="tel:89236566500"
@@ -384,7 +384,7 @@ export default function Index() {
               Стоимость работ
             </h2>
             <p className="font-montserrat text-sm text-muted-foreground mt-6 max-w-xl mx-auto">
-              Окончательная цена зависит от состояния мебели и выбранной ткани. Бесплатный выезд и точный расчёт — звоните.
+              Окончательная цена зависит от состояния мебели и выбранной ткани. Пришлите фото — дадим точный расчёт.
             </p>
           </div>
 
@@ -415,7 +415,7 @@ export default function Index() {
             <div className="flex items-center gap-3">
               <Icon name="Info" size={18} className="text-primary flex-shrink-0" />
               <p className="font-montserrat text-xs text-muted-foreground">
-                Цены ориентировочные. Точный расчёт — после бесплатного выезда мастера на дом.
+                Цены ориентировочные. Точный расчёт — пришлите фото мебели, ответим в течение часа.
               </p>
             </div>
             <a
@@ -706,7 +706,7 @@ export default function Index() {
                 <em>вашу мебель</em>
               </h2>
               <p className="font-montserrat text-sm text-muted-foreground leading-relaxed mb-10 max-w-sm">
-                Оставьте заявку — мастер свяжется с вами в течение часа и согласует удобное время бесплатного выезда.
+                Оставьте заявку — мастер свяжется с вами в течение часа и сделает оценку по фотографии.
               </p>
 
               <div className="flex flex-col gap-6">
@@ -735,7 +735,7 @@ export default function Index() {
 
             <div className="bg-background border border-border p-10">
               <h3 className="font-cormorant text-3xl font-light mb-2" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-                Заявка на замер
+                Заявка на оценку
               </h3>
               <p className="font-montserrat text-xs text-muted-foreground mb-8">Бесплатно, без обязательств. Ответим в течение часа.</p>
 
