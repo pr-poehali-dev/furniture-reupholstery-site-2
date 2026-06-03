@@ -531,6 +531,29 @@ export default function Index() {
               </a>
             </div>
           </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
+            <div className="relative overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/10544cb8-8121-48a8-b1a7-92907ded99ab.png"
+                alt="Наши швеи за работой"
+                className="w-full h-64 object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-background/70 px-5 py-3">
+                <p className="font-montserrat text-xs tracking-widest uppercase text-foreground">Наши мастера</p>
+              </div>
+            </div>
+            <div className="relative overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/01922a6f-1a09-43bf-a1bf-63cc113e8d66.png"
+                alt="Бесплатный вывоз и доставка мебели"
+                className="w-full h-64 object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-background/70 px-5 py-3">
+                <p className="font-montserrat text-xs tracking-widest uppercase text-foreground">Бесплатный вывоз и доставка</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
