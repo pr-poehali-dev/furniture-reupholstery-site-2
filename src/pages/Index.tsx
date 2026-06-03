@@ -10,6 +10,10 @@ const GALLERY_IMG_2 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-
 const BEFORE_AFTER_1 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/files/3b286939-aba5-408e-8b20-bb60ce6b76ff.jpg";
 const BEFORE_AFTER_2 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/files/364c0efc-92e2-40d4-ab42-5166f81d0f61.jpg";
 const BEFORE_AFTER_3 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/files/c6bfbd3e-293e-48a9-8537-7cbdd1bc27d8.jpg";
+const BEFORE_AFTER_4 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/4881d2c1-d153-49fa-a5f8-4d708fc0ef74.png";
+const BEFORE_AFTER_5 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/2758e1ca-7826-49b6-85e0-805d27ab0101.png";
+const BEFORE_AFTER_6 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/2c896451-f6d3-489d-ab01-f2003368e1ed.png";
+const BEFORE_AFTER_7 = "https://cdn.poehali.dev/projects/2c1c2b7c-a07b-4aaa-b118-54c4e8e34048/bucket/06fd1526-cfe3-48f9-abd4-be40d9042eba.png";
 
 const NAV_LINKS = [
   { label: "Услуги", href: "#services" },
@@ -103,6 +107,10 @@ const PRICES = [
 ];
 
 const GALLERY_ITEMS = [
+  { img: BEFORE_AFTER_4, label: "Угловой диван до/после", category: "До/После" },
+  { img: BEFORE_AFTER_5, label: "Трёхместный диван до/после", category: "До/После" },
+  { img: BEFORE_AFTER_6, label: "Двухместный диван до/после", category: "До/После" },
+  { img: BEFORE_AFTER_7, label: "Угловой диван до/после", category: "До/После" },
   { img: BEFORE_AFTER_1, label: "Диван до/после", category: "До/После" },
   { img: BEFORE_AFTER_2, label: "Кресло до/после", category: "До/После" },
   { img: BEFORE_AFTER_3, label: "Изголовье кровати", category: "Кровати" },
