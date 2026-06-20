@@ -115,18 +115,18 @@ const PRICES = [
 ];
 
 const GALLERY_ITEMS = [
-  { img: BEFORE_AFTER_4, label: "Угловой диван", category: "Диваны" },
-  { img: BEFORE_AFTER_5, label: "Трёхместный диван", category: "Диваны" },
-  { img: BEFORE_AFTER_6, label: "Двухместный диван", category: "Диваны" },
-  { img: BEFORE_AFTER_7, label: "Угловой диван", category: "Диваны" },
-  { img: BEFORE_AFTER_8, label: "Классический диван", category: "Диваны" },
-  { img: BEFORE_AFTER_9, label: "Угловой диван", category: "Диваны" },
-  { img: BEFORE_AFTER_10, label: "Трёхместный диван", category: "Диваны" },
-  { img: BEFORE_AFTER_11, label: "Антикварный диван", category: "Диваны" },
-  { img: BEFORE_AFTER_12, label: "Угловой диван", category: "Диваны" },
-  { img: BEFORE_AFTER_13, label: "Двухместный диван", category: "Диваны" },
-  { img: BEFORE_AFTER_14, label: "Диван Честерфилд", category: "Диваны" },
-  { img: BEFORE_AFTER_15, label: "Изголовье кровати", category: "Кровати" },
+  { img: BEFORE_AFTER_4, label: "Перетяжка углового дивана в Барнауле — до и после", category: "Диваны" },
+  { img: BEFORE_AFTER_5, label: "Реставрация трёхместного дивана в Барнауле", category: "Диваны" },
+  { img: BEFORE_AFTER_6, label: "Обивка двухместного дивана тканью в Барнауле", category: "Диваны" },
+  { img: BEFORE_AFTER_7, label: "Перетяжка углового дивана — результат работы мастерской", category: "Диваны" },
+  { img: BEFORE_AFTER_8, label: "Реставрация классического дивана в Барнауле", category: "Диваны" },
+  { img: BEFORE_AFTER_9, label: "Перетяжка углового дивана недорого в Барнауле", category: "Диваны" },
+  { img: BEFORE_AFTER_10, label: "Обивка трёхместного дивана новой тканью в Барнауле", category: "Диваны" },
+  { img: BEFORE_AFTER_11, label: "Реставрация антикварного дивана в Барнауле", category: "Диваны" },
+  { img: BEFORE_AFTER_12, label: "Перетяжка углового дивана — фото работы до и после", category: "Диваны" },
+  { img: BEFORE_AFTER_13, label: "Ремонт и перетяжка двухместного дивана в Барнауле", category: "Диваны" },
+  { img: BEFORE_AFTER_14, label: "Перетяжка дивана Честерфилд в Барнауле", category: "Диваны" },
+  { img: BEFORE_AFTER_15, label: "Реставрация изголовья кровати в Барнауле", category: "Кровати" },
 ];
 
 const REVIEWS = [
