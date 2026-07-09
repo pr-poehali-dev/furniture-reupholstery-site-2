@@ -293,6 +293,7 @@ export default function Index() {
               <span className="block text-foreground">Новая</span>
               <span className="block text-gold-gradient italic">жизнь</span>
               <span className="block text-foreground">вашей мебели</span>
+              <span className="sr-only"> — перетяжка мебели в Барнауле</span>
             </h1>
 
             <div className="w-16 h-px bg-gradient-to-r from-primary to-transparent mb-8 animate-fade-in-up delay-400" />
