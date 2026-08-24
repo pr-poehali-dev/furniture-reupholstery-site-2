@@ -289,6 +289,12 @@ export default function Index() {
             <p className="font-montserrat text-xs tracking-[0.4em] uppercase text-primary mb-6 animate-fade-in-up">
               №1 в Барнауле · 22 года мастерства
             </p>
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 border border-primary/40 bg-primary/10 animate-fade-in-up">
+              <Icon name="Sparkles" size={14} className="text-primary" />
+              <span className="font-montserrat text-xs tracking-wide text-foreground">
+                Знаете, как сэкономить <span className="text-primary font-semibold">до 70%</span> на перетяжке вместо покупки новой мебели?
+              </span>
+            </div>
             <h1 className="font-cormorant text-6xl md:text-8xl font-light leading-[0.9] mb-6 animate-fade-in-up delay-200" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               <span className="block text-foreground">Новая</span>
               <span className="block text-gold-gradient italic">жизнь</span>
