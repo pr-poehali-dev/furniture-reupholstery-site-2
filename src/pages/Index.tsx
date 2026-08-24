@@ -393,6 +393,12 @@ export default function Index() {
             <p className="font-montserrat text-sm text-muted-foreground mt-6 max-w-xl mx-auto">
               Окончательная цена зависит от состояния мебели и выбранной ткани. Пришлите фото — дадим точный расчёт.
             </p>
+            <div className="inline-flex items-center gap-2 mt-6 px-4 py-2 border border-primary/40 bg-primary/10">
+              <Icon name="Sparkles" size={14} className="text-primary flex-shrink-0" />
+              <span className="font-montserrat text-xs tracking-wide text-foreground">
+                Перетяжка обойдётся до <span className="text-primary font-semibold">70% дешевле</span> покупки новой мебели
+              </span>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
