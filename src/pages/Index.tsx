@@ -186,6 +186,12 @@ export default function Index() {
       ? GALLERY_ITEMS
       : GALLERY_ITEMS.filter((g) => g.category === activeCategory);
 
+  const trackGoal = (goal: string) => {
+    if (typeof window !== "undefined" && (window as any).ym) {
+      (window as any).ym(101026698, "reachGoal", goal);
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name || !form.phone) return;
@@ -198,6 +204,7 @@ export default function Index() {
       });
       if (res.ok) {
         setFormState("success");
+        trackGoal("lead_form_submit");
         setForm({ name: "", phone: "", service: "", message: "" });
       } else {
         setFormState("error");
@@ -236,6 +243,7 @@ export default function Index() {
 
           <a
             href="tel:89236566500"
+            onClick={() => trackGoal("phone_click")}
             className="hidden md:flex items-center gap-2 font-montserrat text-xs tracking-wider text-primary hover:opacity-80 transition-opacity"
           >
             <Icon name="Phone" size={14} />
@@ -265,7 +273,7 @@ export default function Index() {
               ))}
               <a
                 href="tel:89236566500"
-                onClick={() => setMenuOpen(false)}
+                onClick={() => { setMenuOpen(false); trackGoal("phone_click"); }}
                 className="mx-6 mt-2 flex items-center justify-center gap-2 font-montserrat text-xs tracking-widest uppercase px-5 py-3 border border-primary text-primary"
               >
                 <Icon name="Phone" size={14} />
@@ -317,6 +325,7 @@ export default function Index() {
               </a>
               <a
                 href="tel:89236566500"
+                onClick={() => trackGoal("phone_click")}
                 className="font-montserrat text-xs tracking-widest uppercase px-8 py-4 border border-border text-foreground hover:border-primary transition-colors text-center flex items-center justify-center gap-2"
               >
                 <Icon name="Phone" size={14} />
@@ -676,6 +685,7 @@ export default function Index() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
             <a
               href="tel:89236566500"
+              onClick={() => trackGoal("phone_click")}
               className="font-montserrat text-xs tracking-widest uppercase px-10 py-4 bg-primary text-primary-foreground hover:opacity-90 transition-opacity flex items-center gap-3"
             >
               <Icon name="Phone" size={14} />
@@ -735,7 +745,11 @@ export default function Index() {
                     <div>
                       <div className="font-montserrat text-[10px] tracking-widest uppercase text-muted-foreground mb-0.5">{contact.title}</div>
                       {contact.href ? (
-                        <a href={contact.href} className="font-montserrat text-sm text-foreground hover:text-primary transition-colors">{contact.value}</a>
+                        <a
+                          href={contact.href}
+                          onClick={() => contact.href.startsWith("tel:") && trackGoal("phone_click")}
+                          className="font-montserrat text-sm text-foreground hover:text-primary transition-colors"
+                        >{contact.value}</a>
                       ) : (
                         <div className="font-montserrat text-sm text-foreground">{contact.value}</div>
                       )}
@@ -893,7 +907,7 @@ export default function Index() {
           </div>
 
           <div className="flex flex-col items-center md:items-end gap-1">
-            <a href="tel:89236566500" className="font-montserrat text-sm text-foreground hover:text-primary transition-colors">
+            <a href="tel:89236566500" onClick={() => trackGoal("phone_click")} className="font-montserrat text-sm text-foreground hover:text-primary transition-colors">
               8-923-656-6500
             </a>
             <p className="font-montserrat text-[10px] text-muted-foreground">© 2026 Перетяжка мебели №1</p>
